@@ -1,0 +1,18 @@
+#conteneur{
+    display: grid;
+    grid-template-columns: 1fr 200px 100px;
+    grid-template-rows: 20% 1fr 20%;
+  min-height: 100vh;
+    gap: 2vw;
+   grid-template-areas: "header header header"
+                         "nav article ads"
+                         "footer footer footer";
+    }
+    #conteneur div:nth-child(1){grid-area:header;background-color: blueviolet;}
+    #conteneur div:nth-child(2){grid-area:nav;background-color: blueviolet;}
+    #conteneur div:nth-child(3){grid-area:article;background-color: blueviolet; }
+    #conteneur div:nth-child(4){grid-area:ads;background-color: blueviolet;}
+    #conteneur div:nth-child(5) {grid-area:footer;background-color: blueviolet;}
+    
+    
+    

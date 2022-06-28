@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours CSS</title>
+    <link rel="icon" type="image/jbg" href="CSS.png">
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <section>
+        <div id="page1">
+        <h1>Cours CSS</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+        <h2 id="p1">Plan</h2>
+        <ol class="plan">
+            <li ><a href="#introduction">Introduction</a></li>
+            <li ><a href="#les bases de CSS">les bases de CSS</a></li>
+            <li ><a href="les propriétés de CSS">les propriétés de CSS</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xdOvVQCqjJc">Autres infomations</a></li>
+            <li><a href="https://www.youtube.com/watch?v=YszONjKpgg4">CSS animation </a></li>
+            <li><a href="https://www.youtube.com/watch?v=XCSYYUYQ768">CSS grid</a></li>
+        </ol>
+    </div>
+    <div>
+        <h2><strong>Introduction</strong></h2>
+        <div id="grid1">
+        <p class="m">Les CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade ») sont le code utilisé pour mettre en forme une page web. Les bases des CSS présentent ce qu'il faut savoir pour commencer. Nous répondrons à des questions comme : Comment rendre mon texte rouge ou noir ? Comment faire apparaître mon contenu à tel endroit de l'écran ? Comment décorer ma page web avec une image ou une couleur d'arrière-plan ? CSS ( Cascading Style Sheets ) : Une feuille de style CSS est un langage informatique ( langage CSS ) qui décrit la présentation des documents HTML, XHTML et XML. Les standards définissant le code CSS sont publiés par le World Wide Web Consortium (W3C). </p>
+        <img id="image"  src="csss.png" />
+    </div>
+    </div>
+    <div>
+        <h2><strong>Les bases de CSS</strong></h2>
+        <p class="A">Les différentes parties se nomment : </p>
+        <ul class="grid10">
+            <div>
+            <li class="A">Sélecteur</li>
+            <p>C'est le nom de l'élément HTML situé au début de l'ensemble de règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l'occurence, les éléments p). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.</p>
+            </div>
+            <div>
+            <li class="A">Déclaration</li>
+           
+          
+            <p>C'est une règle simple comme color: red; qui détermine les propriétés de l'élément que l'on veut mettre en forme.</p>
+           </div>
+           <div>
+            <li class="A">Propriétés</li>  
+            <p>Les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, color est une propriété des éléments p). En CSS, vous choisissez les différentes propriétés que vous voulez utiliser dans une règle CSS.</p>
+        </div>
+        <div>
+            <li class="A">Valeur de la propriété</li>  
+            
+           
+            <p>À droite de la propriété, après les deux points, on a la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d'autres pour une propriété donnée (par exemple, il y a d'autres couleurs que red pour la propriété color).</p>
+        </div>
+        <div>
+            <li class="A">Les différents types de sélecteurs</li>
+       <p>Il y a différents types de sélecteurs. Dans les exemples précédents, nous n'avons vu que les sélecteurs d'élément qui permettent de sélectionner les éléments HTML d'un type donné dans un document HTML. Mais ce n'est pas tout, il est possible de faire des sélections plus spécifiques. Voici quelques-uns des types de sélecteur les plus fréquents :</p>
+    </div>
+    <div>
+        <li class="A">Mettre en forme le corps de page </li>
+        <img src="Capture.PNG">
+    </div>
+</ul> 
+
+
+       <table border="||">
+          
+               
+               <tr>
+                   <td>Nom du sélecteur</td>
+                   <td>Ce qu'il sélectionne</td>
+                   <td>Exemple</td>
+                               </tr>
+                 <tr>
+                     <td>Sélecteur d'élément (parfois appelé « sélecteur de balise » ou « sélecteur de type »)</td>
+                     <td>Tous les éléments HTML d'un type donné.</td>
+                     <td>p sélectionne tous les < p ></td>
+
+                     </tr> 
+                     <tr>
+                         <td>Sélecteur de classe</td>
+                         <td>Les éléments d'une page qui sont de la classe donnée (pour une page donnée, il est possible d'avoir plusieurs éléments qui partagent une même classe).</td>
+                         <td>.my-class sélectionne < p class="my-class"> et < a class="my-class!"></td>
+                        
+                        </tr> 
+                        <tr>
+                            <td>Sélecteur d'attribut</td>
+                            <td>Les éléments de la page qui possèdent l'attribut donné.</td>
+                            <td>img[src] sélectionne < img src="monimage.png"> mais pas < img ></td>
+                        </tr>            
+                   
+                </table>
+           
+                
+                
+                
+
+          
+
+   
+    </div>
+    <div>
+        <h2>Les propriétés de CSS</h2>
+      
+        <p class="m">Les propriétés raccourcies sont des propriétés CSS qui permettent de définir la valeur de plusieurs propriétés via une seule déclaration. En manipulant des propriétés raccourcies, un développeur web peut créer des feuilles de style plus concises et plus lisibles, améliorant ainsi la maintenabilité.
+
+          
+            La spécification CSS définit les propriétés raccourcies en regroupant la définition des propriétés agissant sur le même aspect de l'élément. Ainsi, la propriété background est une propriété raccourcie qui permettra de définir background-color, background-image, background-repeat et background-position. De même, les propriétés fréquemment utilisées pour la mise en forme des polices de caractères (font) peuvent être définies via la propriété raccourcie font et celles qui concernent la marge avec la propriété raccourcie margin.</p>
+     
+
+        </div>
+    </section>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    
+    <footer class="footer">
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+    <p><i class="fa fa-location-arrow"></i>Nefta 2240 </p>
+    <p><i class="fa fa-phone"></i>  53301880  </p>
+    <p><i class="fa fa fa-envelope"></i> dhahbimbarka2000@gmail.com  </p>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    </div>
+    
+    
+    <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="cours-gratuit.com/cours-developpement-web">Home</a></li>
+    
+    <li><a href="https://www.net-concept.fr/developpement-web/le-developpement-web-cest-quoi/">Services</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/#inbox?projector=1">Contact</a></li>
+    </ul>
+    
+    
+    <ul class="social_footer_ul">
+    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    
+    </div>
+    
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+         
+    
+           
+          
+    
+
+    
+</body>
+</html>
